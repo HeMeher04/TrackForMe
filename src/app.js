@@ -4,6 +4,11 @@ const dotenv = require("dotenv");
 const mongoose = require("mongoose");
 dotenv.config();
 
+app.use(express.json());
+
+const authRouter = require("./routes/auth.js");
+app.use("/",authRouter);
+
 const connectDB = async(req,res) =>{
     await mongoose.connect(`${process.env.URI}/${process.env.DB_Name}`);
 }

@@ -14,7 +14,7 @@ const userSchema= new mongoose.Schema({
         minlength:3,
         maxlength:30
     },
-    emailId:{
+    emailID:{
         type:String,
         required:true,
         lowercase:true,
@@ -37,5 +37,5 @@ const userSchema= new mongoose.Schema({
     },
 },{timestamps : true});
 
-const user= mongoose.model("User",userSchema);
-module.exports = user;
+const User= mongoose.model("User",userSchema);
+module.exports = User;
