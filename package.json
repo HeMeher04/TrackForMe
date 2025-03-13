@@ -1,0 +1,29 @@
+{
+  "name": "trackforme",
+  "version": "1.0.0",
+  "description": "Tracking Job for Particular User",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon run src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HeMeher04/TrackForMe.git"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "mongodb"
+  ],
+  "author": "Hemsagar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HeMeher04/TrackForMe/issues"
+  },
+  "homepage": "https://github.com/HeMeher04/TrackForMe#readme",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.12.1"
+  }
+}
